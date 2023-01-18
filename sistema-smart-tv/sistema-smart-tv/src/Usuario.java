@@ -1,3 +1,5 @@
+
+
 public class Usuario {
         public static void main(String[] args) throws Exception{
             
@@ -6,7 +8,11 @@ public class Usuario {
             smartTv.increaseVolume();
             smartTv.increaseVolume();
 
-            System.out.println("Actual volume: ");
+
+            smartTv.changeChannel(52);
+            System.out.println(smartTv.channel);
+
+            System.out.println("Actual volume: " + smartTv.volume);
 
             System.out.println("Is TV on?: " + smartTv.on);
             System.out.println("Actual channel?: " + smartTv.channel);
