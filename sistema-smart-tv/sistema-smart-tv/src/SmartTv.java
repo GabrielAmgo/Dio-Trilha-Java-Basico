@@ -5,6 +5,18 @@ public class SmartTv {
     int volume = 25;
         
 
+    public void changeChannel(int newChannel){
+        channel = newChannel;
+    }
+
+    public void increaseChannel(){
+        channel++;
+    }
+
+    public void decreaseChannel(){
+        channel--;
+    }
+
     public void turnOn(){
         on=true;
     }
@@ -15,7 +27,6 @@ public class SmartTv {
 
     public void increaseVolume(){
         volume++;
-        System.out.println("The volume was set to: "+volume);
     }
 
     public void decreaseVolume(){
